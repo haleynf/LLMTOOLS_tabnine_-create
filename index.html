@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Photography Website</title>
+    <style>
+        body {
+            background-color: #663399;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        header a, footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        header a:hover, footer a:hover {
+            color: #ccc;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            margin: 10px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .caption {
+            text-align: center;
+            font-size: 18px;
+            font-style: italic;
+            color: #ccc;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#stories">Stories</a>
+        <a href="#images">Images</a>
+        <a href="#about">About</a>
+    </header>
+    <main>
+        <section id="images">
+            <div class="gallery">
+                <img src="image1.jpg" alt="Landscape 1">
+                <div class="caption">Caption 1</div>
+                <!-- Repeat for all 10 images -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2022 Blog Photography Website. All rights reserved.</p>
+        <p>Contact: info@blogphotography.com</p>
+        <a href="#" target="_blank">Facebook</a>
+        <a href="#" target="_blank">Instagram</a>
+        <a href="#" target="_blank">Twitter</a>
+    </footer>
+</body>
+</html>
